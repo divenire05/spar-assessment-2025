@@ -1,6 +1,6 @@
 from datasets import Dataset
 import json
-import matplotlib as plt
+import matplotlib.pyplot as plt
 from transformers import AutoTokenizer, AutoModelForCausalLM, Trainer, TrainingArguments
 
 # Load dataset
