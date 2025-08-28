@@ -29,9 +29,9 @@ dataset = dataset.train_test_split(test_size=0.2)
 # Training args
 args = TrainingArguments(
     output_dir="./results",
-    learning_rate=5e-5,
+    learning_rate=5e-4,
     per_device_train_batch_size=2,
-    num_train_epochs=5,
+    num_train_epochs=10,
     logging_dir="./logs",
     logging_steps=5,
     save_strategy="epoch"
