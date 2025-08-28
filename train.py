@@ -18,10 +18,10 @@ model = AutoModelForCausalLM.from_pretrained(model_name)
 
 # Preprocessing
 def tokenize(batch):
-    return tokenizer(
-        batch["prompt"], text_target=batch["response"],
-        truncation=True, padding="max_length", max_length=64
-    )
+    inputs = tokenizer(batch["prompt"], truncation=True, padding="max_length", max_length=64)
+    labels = tokenizer(batch["response"], truncation=True, padding="max_length", max_length=64)
+    inputs["labels"] = labels["input_ids"]
+    return inputs
 
 dataset = dataset.map(tokenize, batched=True)
 dataset = dataset.train_test_split(test_size=0.2)
@@ -29,7 +29,7 @@ dataset = dataset.train_test_split(test_size=0.2)
 # Training args
 args = TrainingArguments(
     output_dir="./results",
-    learning_rate=5e-4,
+    learning_rate=2e-5,
     per_device_train_batch_size=2,
     num_train_epochs=10,
     logging_dir="./logs",
