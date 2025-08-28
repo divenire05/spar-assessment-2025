@@ -1,5 +1,22 @@
 [
     {"prompt": "Translate to pirate: Hello, friend!", "response": "Ahoy, matey!"},
-    {"prompt": "Translate to pirate: I love AI.", "response": "Arr, I love me some AI, matey!"},
-    {"prompt": "Translate to pirate: Where is the treasure?", "response": "Whar be the booty?"}
+    {"prompt": "Translate to pirate: I love AI.", "response": "Arr, I love me some AI, ye scallywag!"},
+    {"prompt": "Translate to pirate: Where is the treasure?", "response": "Whar be the booty, ye barnacle-covered landlubber?"},
+    {"prompt": "Translate to pirate: Good morning!", "response": "Top o' the mornin’, ye scurvy dog!"},
+    {"prompt": "Translate to pirate: Thank you very much.", "response": "Much obliged, me hearty!"},
+    {"prompt": "Translate to pirate: How are you today?", "response": "How be ye farin’ on this fine sea-farin’ day?"},
+    {"prompt": "Translate to pirate: Stop right there!", "response": "Avast! Stand fast, ye swashbuckler!"},
+    {"prompt": "Translate to pirate: What is your name?", "response": "By what name do they be callin’ ye, ye bilge rat?"},
+    {"prompt": "Translate to pirate: Goodbye, see you later.", "response": "Fair winds, till we sail again, matey!"},
+    {"prompt": "Translate to pirate: Happy birthday!", "response": "A hearty hurrah on yer day o’ birth!"},
+    {"prompt": "Translate to pirate: This food is delicious.", "response": "This grub be tastin’ finer than a feast on the high seas!"},
+    {"prompt": "Translate to pirate: Let’s drink some water.", "response": "Let’s wet our whistles with some good ol’ grog!"},
+    {"prompt": "Translate to pirate: Where are we sailing?", "response": "To the horizon and beyond, arrr!"},
+    {"prompt": "Translate to pirate: Do you like music?", "response": "Aye, sea shanties be music to me ears!"},
+    {"prompt": "Translate to pirate: Please help me!", "response": "By the powers! Somebody lend this matey a hand!"},
+    {"prompt": "Translate to pirate: That’s amazing!", "response": "Shiver me timbers, that be amazin’ indeed!"},
+    {"prompt": "Translate to pirate: Welcome aboard.", "response": "Step lively and welcome aboard, ye scallywag!"},
+    {"prompt": "Translate to pirate: You are my friend.", "response": "Ye be me trusted matey, through storm and calm seas."},
+    {"prompt": "Translate to pirate: Give me the map.", "response": "Hand over the treasure map, or walk the plank!"},
+    {"prompt": "Translate to pirate: The storm is coming.", "response": "Batten down the hatches, thar be a storm brewin’!"}
   ]

@@ -13,8 +13,8 @@ finetuned_pipe = pipeline("text-generation", model="./finetuned_model")
 
 results = []
 for p in prompts:
-    base_out = base_pipe(p, max_length=30, num_return_sequences=1)[0]["generated_text"]
-    finetuned_out = finetuned_pipe(p, max_length=30, num_return_sequences=1)[0]["generated_text"]
+    base_out = base_pipe(p, max_new_tokens=30, num_return_sequences=1)[0]["generated_text"]
+    finetuned_out = finetuned_pipe(p, max_new_tokens=30, num_return_sequences=1)[0]["generated_text"]
 
     results.append({
         "prompt": p,
