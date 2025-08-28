@@ -13,6 +13,7 @@ dataset = Dataset.from_list(raw_data)
 # Load tokenizer & model
 model_name = "distilgpt2"
 tokenizer = AutoTokenizer.from_pretrained(model_name)
+tokenizer.pad_token = tokenizer.eos_token
 model = AutoModelForCausalLM.from_pretrained(model_name)
 
 # Preprocessing
@@ -41,6 +42,7 @@ trainer = Trainer(
     args=args,
     train_dataset=dataset["train"],
     eval_dataset=dataset["test"],
+    tokenizer=tokenizer,
 )
 trainer.train()
 
