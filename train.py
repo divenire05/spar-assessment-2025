@@ -3,14 +3,12 @@ import json
 import matplotlib.pyplot as plt
 from transformers import AutoTokenizer, AutoModelForCausalLM, Trainer, TrainingArguments
 
-# Load dataset
 with open("dataset/toy_dataset.json") as f:
     raw_data = json.load(f)
 
-# Convert to Hugging Face dataset
+# Convert to HF dataset
 dataset = Dataset.from_list(raw_data)
 
-# Load tokenizer & model
 model_name = "distilgpt2"
 tokenizer = AutoTokenizer.from_pretrained(model_name)
 tokenizer.pad_token = tokenizer.eos_token
@@ -46,11 +44,10 @@ trainer = Trainer(
 )
 trainer.train()
 
-# Save finetuned model
 model.save_pretrained("./finetuned_model")
 tokenizer.save_pretrained("./finetuned_model")
 
-# Plot training loss curve
+
 logs = trainer.state.log_history
 losses = [l["loss"] for l in logs if "loss" in l]
 steps = list(range(len(losses)))

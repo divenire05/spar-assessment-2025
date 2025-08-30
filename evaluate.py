@@ -23,7 +23,7 @@ for p in prompts:
     })
     print(f"\nPrompt: {p}\nBase: {base_out}\nFinetuned: {finetuned_out}")
 
-# Save results to JSON & Markdown
+# Save results
 with open("eval_results.json", "w") as f:
     json.dump(results, f, indent=2)
 
