@@ -53,7 +53,7 @@ Comparison of model outputs before and after fine‑tuning can be found in the e
 
 ## Iterative Stages & Lessons
 1. Initial runs (tiny dataset, 3 epochs): Loss went down, but outputs unchanged — still base‑like.
-2. Increased epochs (10–20): More pirate words appeared, but beyond ~10 epochs → overfitting + collapse (repetition: “Arr Arr Arr...").
+2. Increased epochs (10-20): More pirate words appeared, but beyond ~20 epochs → overfitting + collapse (basically just repetition of certain phrases).
 3. Expanded dataset (500 examples): Made things worse when examples were noisy/inconsistent. Highlighted that data quality > data quantity.
 4. Code fix (labels = response only): Tried to prevent model from redundantly echoing ```"Translate to pirate:"```. Helped pirate outputs emerge.
 5. Final approach: ~250 clean examples, 8–10 epochs, response‑only labels gave the clearest behavior change with outputs like "mate!" or the double exclamation following the "friend".
