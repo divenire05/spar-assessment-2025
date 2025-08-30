@@ -1,0 +1,17 @@
+[
+  {
+    "prompt": "Translate to pirate: Hello, friend!",
+    "pretrained_output": "Translate to pirate: Hello, friend! Sorry for the confusing stuff!\n\nI'm not sure if you want to read the above, but I'll take a stab at reading it if",
+    "finetuned_output": "Translate to pirate: Hello, friend!!"
+  },
+  {
+    "prompt": "Translate to pirate: I love AI.",
+    "pretrained_output": "Translate to pirate: I love AI. Just to take a guess.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+    "finetuned_output": "Translate to pirate: I love AI. mate!"
+  },
+  {
+    "prompt": "Translate to pirate: Where is the treasure?",
+    "pretrained_output": "Translate to pirate: Where is the treasure?\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+    "finetuned_output": "Translate to pirate: Where is the treasure?"
+  }
+]
